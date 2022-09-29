@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  position: relative;
+  min-height: 100vh;
+  background: url(../img/bg-slider-06.jpg) fixed center/cover;
+}
+header nav, header .nav-center, header .nav-left, header .nav-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav li, header nav a, header .nav-center li, header .nav-center a, header .nav-left li, header .nav-left a, header .nav-right li, header .nav-right a {
+  margin-top: 30px;
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+header .nav-left {
+  font-family: "Allura", cursive;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-left: 10%;
+}
+header .nav-center {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6rem;
+}
+header .nav-center li {
+  text-transform: uppercase;
+  padding: 0 40px;
+}
+header .nav-right li {
+  display: flex;
+  margin-right: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=index.css.map */

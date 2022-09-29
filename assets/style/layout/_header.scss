@@ -1,0 +1,42 @@
+header {
+    color: $color1;
+    position: relative;
+    min-height: 100vh;
+    background: url(../img/bg-slider-06.jpg) fixed center/cover;
+    
+    nav, .nav-center, .nav-left, .nav-right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li, a {
+            margin-top: 30px;
+            list-style-type: none;
+            text-decoration: none;
+            color: $color1;
+        }
+    }
+
+    .nav-left {
+        font-family: $font1;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-left: 10%;
+    }
+    .nav-center {
+        font-family: $font3;
+        font-size: 0.6rem;
+       
+
+        li{
+        text-transform: uppercase;
+        padding: 0 40px;
+        }
+    }
+    .nav-right {
+        li {
+            display: flex;
+            margin-right: 10%;
+        }
+    }
+}
