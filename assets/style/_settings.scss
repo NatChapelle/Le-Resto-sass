@@ -5,10 +5,23 @@ $font3: 'Roboto', sans-serif;
 $color1: rgb(255, 255, 255);
 $color2: rgb(199, 191, 191);
 $color3: grey;
-$color4: rgb(193, 184, 13);
+$color4: rgb(201, 150, 89);
 $color5: rgb(51, 50, 50);
 $color6:rgb(25, 25, 25);
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: $font3;
+}
+h3 {
+    font-family: $font1;
+    font-weight: 400;
+    color: $color4;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }

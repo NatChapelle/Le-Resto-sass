@@ -26,6 +26,10 @@ header {
     .nav-center {
         font-family: $font3;
         font-size: 0.6rem;
+
+        @media screen and(max-width: 940px) {
+            display: none;
+        }
        
 
         li{
@@ -34,9 +38,46 @@ header {
         }
     }
     .nav-right {
+        margin-right: 10%;
         li {
             display: flex;
-            margin-right: 10%;
+            
+            padding: 0 8px;
+        }
+    }
+    .header-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 200px;
+        transform: translateY(50%);
+
+        @media screen and(max-width: 550px) {
+           h1, p {
+            letter-spacing: 2px;
+           } 
+           p {
+            font-size: 0.7rem;
+           }
+        }
+        
+        h1 {
+            font-family: $font2;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font-size: 2.5rem;
+            transform: translateY(-40%);
+        }
+        img {
+            margin: 30px;
+        }
+        p {
+            font-family: $font3;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-top: 30px;
+            // transform: translateY(100%);
         }
     }
 }

@@ -1,5 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  color: rgb(201, 150, 89);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
 }
 
 header {
@@ -29,13 +43,53 @@ header .nav-center {
   font-family: "Roboto", sans-serif;
   font-size: 0.6rem;
 }
+@media screen and (max-width: 940px) {
+  header .nav-center {
+    display: none;
+  }
+}
 header .nav-center li {
   text-transform: uppercase;
   padding: 0 40px;
 }
+header .nav-right {
+  margin-right: 10%;
+}
 header .nav-right li {
   display: flex;
-  margin-right: 10%;
+  padding: 0 8px;
+}
+header .header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  transform: translateY(50%);
+}
+@media screen and (max-width: 550px) {
+  header .header-center h1, header .header-center p {
+    letter-spacing: 2px;
+  }
+  header .header-center p {
+    font-size: 0.7rem;
+  }
+}
+header .header-center h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 2.5rem;
+  transform: translateY(-40%);
+}
+header .header-center img {
+  margin: 30px;
+}
+header .header-center p {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: 30px;
 }
 
 * {
