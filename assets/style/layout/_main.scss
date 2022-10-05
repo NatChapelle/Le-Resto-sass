@@ -98,4 +98,48 @@
        height: 600px;
        margin-top: 80px;
     }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1.5em;
+        border-top: solid 5px $color4;
+        background: $color2;
+        color: $color6;
+        z-index: 10;
+        transform: translateY(-145%);
+
+        .menu {
+            font-family: $font3;
+            font-size: 16px;
+           
+        }
+
+        .menu-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3,1fr);
+
+            @media screen and(max-width: 940px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1.5em;
+                padding: 1.5em 0;
+            }
+        }
+        .menu-item {
+            display: flex;
+            padding: 20px;
+            border-bottom: dashed 2px $color3 ;
+            max-width: 340px;
+
+            .menu-item-image {
+                border-radius: 50px;
+                width: 70px;
+                height: 70px;
+                flex-shrink: 0;
+                margin-right: 1em;
+            }
+        }
+    }
 }
