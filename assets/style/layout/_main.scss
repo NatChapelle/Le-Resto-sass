@@ -197,5 +197,33 @@
     .booking {
         background: $color2;
         width: 70%;
+        text-align: center;
+        .booking-top {
+
+            margin: 50px auto;
+            h2 {
+                color: $color6;
+                font-family: $font2;
+                font-weight: 900;
+                font-size: 1.7rem;
+                letter-spacing: 1px;
+                transform: translateY(-15px);
+            }
+           
+        }
+        .grid-container-booking {
+            select, input {
+                width:30%;
+                font-size: .9rem;
+                padding: 7px;
+                font-family: $font2;
+                border: none;
+                border-bottom: solid $color3 1px;
+                background: $color2;
+
+           
+            
+            }
+        }
     }
 }

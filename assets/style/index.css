@@ -264,6 +264,27 @@ header .header-center p {
 .container-section3 .booking {
   background: rgb(237, 231, 231);
   width: 70%;
+  text-align: center;
+}
+.container-section3 .booking .booking-top {
+  margin: 50px auto;
+}
+.container-section3 .booking .booking-top h2 {
+  color: rgb(25, 25, 25);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  transform: translateY(-15px);
+}
+.container-section3 .booking .grid-container-booking select, .container-section3 .booking .grid-container-booking input {
+  width: 30%;
+  font-size: 0.9rem;
+  padding: 7px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-bottom: solid rgb(157, 157, 157) 1px;
+  background: rgb(237, 231, 231);
 }
 
 * {
