@@ -252,3 +252,39 @@
     }
     }
 }
+
+// SECTION4
+.event-part {
+    transform: translateY(-350px);
+    text-align: center;
+    h2 {
+        color: $color1;
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        transform: translateY(-10px);
+    }
+    img {
+        margin: 20px;
+
+    }
+}
+.event-grid {
+    .grid-card1, .grid-card2 {
+        
+        display: flex;
+        .img-part {
+            width: 40%;
+            img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+        .text-part {
+            width: 60%;
+            background: $color1;
+            color: $color6;
+        }
+    }
+}

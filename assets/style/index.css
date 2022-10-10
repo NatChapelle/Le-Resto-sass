@@ -313,6 +313,38 @@ header .header-center p {
   justify-content: center;
 }
 
+.event-part {
+  transform: translateY(-350px);
+  text-align: center;
+}
+.event-part h2 {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  transform: translateY(-10px);
+}
+.event-part img {
+  margin: 20px;
+}
+
+.event-grid .grid-card1, .event-grid .grid-card2 {
+  display: flex;
+}
+.event-grid .grid-card1 .img-part, .event-grid .grid-card2 .img-part {
+  width: 40%;
+}
+.event-grid .grid-card1 .img-part img, .event-grid .grid-card2 .img-part img {
+  width: 100%;
+  margin: 0;
+}
+.event-grid .grid-card1 .text-part, .event-grid .grid-card2 .text-part {
+  width: 60%;
+  background: rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
+}
+
 * {
   margin: 0;
   padding: 0;
