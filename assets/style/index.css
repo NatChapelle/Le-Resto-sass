@@ -329,18 +329,60 @@ header .header-center p {
   margin: 20px;
 }
 
+.event-grid {
+  width: 65%;
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "card1 card3" "card2 card3";
+}
+.event-grid .grid-card1 {
+  grid-area: card1;
+}
+.event-grid .grid-card2 {
+  grid-area: card2;
+}
+.event-grid .grid-card3 {
+  grid-area: card3;
+  background: url(../img/event-03.jpg) center/cover;
+  position: relative;
+}
+.event-grid .date-container {
+  display: flex;
+  height: 70px;
+  width: 70px;
+  background: rgb(25, 25, 25);
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+.event-grid .date-container .date h4 {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 .event-grid .grid-card1, .event-grid .grid-card2 {
   display: flex;
 }
 .event-grid .grid-card1 .img-part, .event-grid .grid-card2 .img-part {
-  width: 40%;
+  width: 35%;
+  position: relative;
 }
 .event-grid .grid-card1 .img-part img, .event-grid .grid-card2 .img-part img {
   width: 100%;
+  height: 100%;
   margin: 0;
 }
 .event-grid .grid-card1 .text-part, .event-grid .grid-card2 .text-part {
-  width: 60%;
+  width: 65%;
   background: rgb(255, 255, 255);
   color: rgb(25, 25, 25);
 }
