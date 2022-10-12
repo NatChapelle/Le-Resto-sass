@@ -271,8 +271,8 @@
     }
 }
 .event-grid {
-    width: 65%;
-    height: 300px;
+    max-width: 920px;
+    height: 350px;
     margin: 0 auto;
     display: grid;
     gap: 15px;
@@ -293,6 +293,34 @@
         grid-area: card3;
         background: url(../img/event-03.jpg) center/cover;
         position: relative;
+        .date-container {
+            top:25px;
+            transform: translateX(-50%);
+        }
+        .text-part {
+            height: 85%;
+            width: 85%;
+            margin: 25px auto;
+            justify-content: center;
+           
+            
+        }
+        
+        
+       
+    }
+
+    .text-part {
+        background: $color1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+       
+           
+    }
+    .location-text {
+        padding: 20px 0;
     }
     .date-container {
         display: flex;
@@ -320,6 +348,7 @@
     .grid-card1, .grid-card2 {
         
         display: flex;
+        text-align: left;
         .img-part {
             width: 35%;
             position: relative;
