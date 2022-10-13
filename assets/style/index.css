@@ -355,20 +355,44 @@ header .header-center p {
   transform: translateX(-50%);
 }
 .event-grid .grid-card3 .text-part {
+  display: flex;
+  gap: 10px;
   height: 85%;
   width: 85%;
   margin: 25px auto;
   justify-content: center;
 }
+.event-grid .grid-card3 .text-part h4 {
+  margin-top: 20px;
+}
+.event-grid .grid-card3 .text-part .location-text {
+  letter-spacing: 1px;
+  padding: 20px 0 10px 15px;
+}
+.event-grid .grid-card3 .text-part p {
+  margin-top: 30px;
+}
 .event-grid .text-part {
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 15px;
+  justify-content: space-evenly;
+  padding-left: 20px;
 }
-.event-grid .location-text {
-  padding: 20px 0;
+.event-grid .text-part h4 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.event-grid .text-part .location-text {
+  color: rgb(157, 157, 157);
+  font-size: 0.8rem;
+  text-align: left;
+}
+.event-grid .text-part p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
 }
 .event-grid .date-container {
   display: flex;

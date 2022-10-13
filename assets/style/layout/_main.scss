@@ -298,30 +298,59 @@
             transform: translateX(-50%);
         }
         .text-part {
+            display: flex;
+            gap: 10px;
             height: 85%;
             width: 85%;
             margin: 25px auto;
             justify-content: center;
-           
+
+            h4 {
+                margin-top: 20px;
+            }
+            .location-text {
+                letter-spacing: 1px;
+                padding: 20px 0 10px 15px;
+            }
             
+           p {
+            margin-top: 30px;
+           }
+        
         }
         
-        
-       
     }
 
     .text-part {
         background: $color1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 15px;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        
+        h4 {
+            font-family: $font3;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+            font-weight: 400;
+
+        }
        
+        .location-text {
+            color: $color3;
+            font-size: .8rem;
+            text-align: left;
+            
+        }
+        p {
+            font-family: $font2;
+            font-size: .8rem;
+            
+        }
            
     }
-    .location-text {
-        padding: 20px 0;
-    }
+    
+    
     .date-container {
         display: flex;
         height: 70px;
@@ -362,10 +391,13 @@
             width: 65%;
             background: $color1;
             color: $color6;
+
+           
         }
+        
     }
   
-   
+    
      
 }
 
