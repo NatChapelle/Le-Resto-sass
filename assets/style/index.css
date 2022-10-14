@@ -448,7 +448,7 @@ header .header-center p {
   height: 50px;
   border-radius: 50px;
   position: absolute;
-  left: 50%;
+  right: 47%;
   transform: translateY(-50%);
 }
 .bottom-part .bottom-card .bottom-text {
@@ -477,6 +477,60 @@ header .header-center p {
   font-weight: 400;
   line-height: 2rem;
   margin: 5px auto;
+}
+
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+  height: 250px;
+}
+footer .f-container {
+  display: flex;
+  align-items: center;
+  max-width: 950px;
+  margin: 0 auto;
+}
+footer .f-container .f-left {
+  width: 50%;
+  padding: 40px 15px 0 0;
+}
+footer .f-container .f-left .f-text p {
+  color: rgb(157, 157, 157);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+footer .f-container .f-social-grid {
+  color: rgb(157, 157, 157);
+  margin-top: 40px;
+  margin-left: 40px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+footer .f-container .f-social-grid .newsletter, footer .f-container .f-social-grid h4 {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+footer .f-container .f-social-grid input {
+  background: transparent;
+  border: 1px solid rgb(201, 150, 89);
+  opacity: 0.3;
+  text-align: left;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+footer .f-container .f-social-grid .socialmedias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .f-container .f-social-grid .socialmedias i {
+  font-size: 0.7rem;
+  margin-left: 30px;
 }
 
 * {
