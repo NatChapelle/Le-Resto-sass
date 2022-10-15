@@ -101,6 +101,11 @@ header .header-center p {
   background: rgb(237, 231, 231);
   text-align: center;
 }
+@media screen and (max-width: 940px) {
+  .flex-container .left-part {
+    width: 100%;
+  }
+}
 .flex-container .left-part .lp-box {
   margin: 10px;
   padding: 15px;
@@ -135,6 +140,11 @@ header .header-center p {
 .flex-container .right-part {
   background: url(../img/store-01.jpg) center/cover;
   width: 50%;
+}
+@media screen and (max-width: 940px) {
+  .flex-container .right-part {
+    display: none;
+  }
 }
 
 .section2 .top-part {
@@ -176,6 +186,13 @@ header .header-center p {
   height: 600px;
   margin-top: 80px;
 }
+@media screen and (max-width: 940px) {
+  .section2 .bottom-part {
+    bottom: 0;
+    transform: translateY(90%);
+    height: 700px;
+  }
+}
 .section2 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -185,6 +202,14 @@ header .header-center p {
   color: rgb(25, 25, 25);
   z-index: 10;
   transform: translateY(-145%);
+}
+@media screen and (max-width: 940px) {
+  .section2 .container {
+    z-index: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-60%);
+  }
 }
 .section2 .container .menu {
   font-family: "Roboto", sans-serif;
@@ -201,6 +226,9 @@ header .header-center p {
     grid-template-columns: 1fr;
     gap: 1.5em;
     padding: 1.5em 0;
+  }
+  .section2 .container .menu-group .menu-item {
+    max-width: 940px;
   }
 }
 .section2 .container .menu-item {
@@ -234,11 +262,22 @@ header .header-center p {
   transform: translateY(-450px);
   display: flex;
 }
+@media screen and (max-width: 940px) {
+  .container-section3 {
+    flex-direction: column;
+  }
+}
 .container-section3 .opening-time {
   width: 30%;
   background: rgb(25, 25, 25);
   color: rgb(255, 255, 255);
   padding: 1.5em;
+}
+@media screen and (max-width: 940px) {
+  .container-section3 .opening-time {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .container-section3 .opening-time .container-ot {
   border: 1px dashed rgb(255, 255, 255);
@@ -266,6 +305,12 @@ header .header-center p {
   width: 70%;
   text-align: center;
 }
+@media screen and (max-width: 940px) {
+  .container-section3 .booking {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .container-section3 .booking .booking-top {
   margin: 50px auto;
 }
@@ -285,6 +330,12 @@ header .header-center p {
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+}
+@media screen and (max-width: 940px) {
+  .container-section3 .booking .booking-container .grid-booking {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+  }
 }
 .container-section3 .booking .booking-container .grid-booking select, .container-section3 .booking .booking-container .grid-booking input {
   font-size: 0.8rem;
@@ -316,6 +367,11 @@ header .header-center p {
 .event-part {
   transform: translateY(-350px);
   text-align: center;
+}
+@media screen and (max-width: 940px) {
+  .event-part {
+    display: none;
+  }
 }
 .event-part h2 {
   color: rgb(255, 255, 255);
@@ -444,6 +500,12 @@ header .header-center p {
   top: 60%;
   transform: translateY(-60%);
 }
+@media screen and (max-width: 940px) {
+  .bottom-part .bottom-card {
+    height: 500px;
+    width: 90%;
+  }
+}
 .bottom-part .bottom-card img {
   height: 50px;
   border-radius: 50px;
@@ -455,6 +517,11 @@ header .header-center p {
   max-width: 950px;
   text-align: center;
   padding: 50px 20px;
+}
+@media screen and (max-width: 940px) {
+  .bottom-part .bottom-card .bottom-text {
+    padding: 50px 0;
+  }
 }
 .bottom-part .bottom-card .bottom-text p {
   padding: 0 50px;
@@ -483,6 +550,11 @@ footer {
   background: url(../img/bg-footer.jpg) center/cover;
   height: 250px;
 }
+@media screen and (max-width: 940px) {
+  footer {
+    background: none;
+  }
+}
 footer .f-container {
   display: flex;
   align-items: center;
@@ -492,6 +564,11 @@ footer .f-container {
 footer .f-container .f-left {
   width: 50%;
   padding: 40px 15px 0 0;
+}
+@media screen and (max-width: 940px) {
+  footer .f-container .f-left {
+    display: none;
+  }
 }
 footer .f-container .f-left .f-text p {
   color: rgb(157, 157, 157);
