@@ -90,9 +90,10 @@ header .header-center {
 header .header-center h1 {
   font-family: "Poppins", serif;
   text-transform: uppercase;
-  letter-spacing: 8px;
-  font-size: 2.5rem;
-  transform: translateY(-40%);
+  letter-spacing: 10px;
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin-top: -28px;
 }
 header .header-center img {
   margin: 30px;
@@ -146,7 +147,7 @@ header .header-center p {
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
-  transform: translateY(-50%);
+  margin-top: -12px;
 }
 .flex-container .right-part {
   background: url(../img/store-01.jpg) center/cover;
