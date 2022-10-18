@@ -257,7 +257,11 @@ header .header-center p {
   margin-right: 1em;
 }
 .section2 .container .menu-item .menu-item-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   width: 50%;
+  padding-top: 10px;
 }
 .section2 .container .menu-item .menu-item-price {
   font-weight: 800;
