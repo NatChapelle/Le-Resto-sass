@@ -25,8 +25,8 @@
     margin: 0 auto;
     display: grid;
     gap: 15px;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:"card1 card3" 
     "card2 card3" ;
 
@@ -44,18 +44,17 @@
         position: relative;
         .date-container {
             top:25px;
-            transform: translateX(-50%);
+            margin-top: 34px;
         }
         .text-part {
             display: flex;
-            gap: 10px;
             height: 85%;
             width: 85%;
             margin: 25px auto;
             justify-content: center;
 
             h4 {
-                margin-top: 20px;
+                margin-top: 50px;
             }
             .location-text {
                 letter-spacing: 1px;
@@ -94,7 +93,15 @@
         p {
             font-family: $font2;
             font-size: .8rem;
+            letter-spacing: 1px;
             
+        }
+        i {
+            margin-right: 3px;
+            font-size: .7rem;
+            &:nth-child(2) {
+                margin-left: 10px;
+            }
         }
            
     }
@@ -102,6 +109,7 @@
     
     .date-container {
         display: flex;
+        flex-direction: column;
         height: 70px;
         width: 70px;
         background: $color6;
