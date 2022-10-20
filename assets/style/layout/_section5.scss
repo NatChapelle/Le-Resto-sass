@@ -8,12 +8,18 @@
        max-width: 950px;
        height: 300px;
       margin: 0 auto;
+     
       top :60%;
       transform: translateY(-60%);
+      box-shadow: 0 0  3px #333;
 
       @media screen and(max-width: 940px) {
-        height: 500px;
+        min-height: 500px;
+        // height: 100%;
         width: 90%;
+        top :80%;
+        transform: translateY(-80%);
+        
     }
   
       img {
@@ -32,15 +38,17 @@
 
             @media screen and(max-width: 940px) {
                 padding:50px 0;
+                height: 100%;
                
             }
             p {
                 padding: 0 50px;
+                line-height: 2rem;
                 i {
                     margin: 5px;
                    font-size: .8rem;
                 }
-                line-height: 2rem;
+               
             }
             h2 {
                 font-family: $font3;

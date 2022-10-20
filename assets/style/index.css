@@ -80,8 +80,11 @@ header .header-center {
   transform: translateY(50%);
 }
 @media screen and (max-width: 550px) {
-  header .header-center h1, header .header-center p {
-    letter-spacing: 2px;
+  header .header-center {
+    margin-top: -10px;
+  }
+  header .header-center h1 {
+    font-size: 2rem;
   }
   header .header-center p {
     font-size: 0.7rem;
@@ -416,7 +419,7 @@ header .header-center p {
   height: 350px;
   margin: 0 auto;
   display: grid;
-  gap: 15px;
+  gap: 20px;
   grid-template-columns: 58% 42%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "card1 card3" "card2 card3";
@@ -533,11 +536,14 @@ header .header-center p {
   margin: 0 auto;
   top: 60%;
   transform: translateY(-60%);
+  box-shadow: 0 0 3px #333;
 }
 @media screen and (max-width: 940px) {
   .bottom-part .bottom-card {
-    height: 500px;
+    min-height: 500px;
     width: 90%;
+    top: 80%;
+    transform: translateY(-80%);
   }
 }
 .bottom-part .bottom-card img {
@@ -555,6 +561,7 @@ header .header-center p {
 @media screen and (max-width: 940px) {
   .bottom-part .bottom-card .bottom-text {
     padding: 50px 0;
+    height: 100%;
   }
 }
 .bottom-part .bottom-card .bottom-text p {
@@ -592,24 +599,32 @@ footer {
 footer .f-container {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   max-width: 950px;
   margin: 0 auto;
 }
 footer .f-container .f-left {
   width: 50%;
-  padding: 40px 15px 0 0;
+  padding-right: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 940px) {
   footer .f-container .f-left {
     display: none;
   }
 }
+footer .f-container .f-left .f-text h3 {
+  text-align: left;
+}
 footer .f-container .f-left .f-text p {
   color: rgb(157, 157, 157);
   font-family: "Roboto", serif;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  line-height: 2rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 10px;
 }
 footer .f-container .f-social-grid {
   color: rgb(157, 157, 157);
@@ -623,25 +638,34 @@ footer .f-container .f-social-grid .newsletter, footer .f-container .f-social-gr
   color: rgb(255, 255, 255);
   font-weight: 400;
   font-family: "Poppins", serif;
+  text-align: left;
 }
 footer .f-container .f-social-grid input {
-  background: transparent;
+  background: none;
   border: 1px solid rgb(201, 150, 89);
-  opacity: 0.3;
+  opacity: 0.5;
   text-align: left;
-  padding: 8px;
+  padding: 10px;
+  height: 35px;
+  width: 250px;
+  margin-top: -20px;
   font-family: "Roboto", serif;
   font-size: 0.9rem;
   font-weight: 800;
 }
 footer .f-container .f-social-grid .socialmedias {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 footer .f-container .f-social-grid .socialmedias i {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-left: 30px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+footer .f-container .f-social-grid .socialmedias i:hover {
+  transform: scale(1.5);
 }
 
 * {

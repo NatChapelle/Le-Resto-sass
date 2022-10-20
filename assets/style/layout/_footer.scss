@@ -8,24 +8,34 @@ footer {
     .f-container {
         display: flex;
         align-items: center;
+        justify-content:flex-start;
         max-width: 950px;
         margin: 0 auto;
 
         .f-left {
             width: 50%;
-            padding:40px 15px 0 0;
+            padding-right: 30px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            
             @media screen and(max-width: 940px) {
                 display: none;
             }
            
             .f-text {
-            
+                h3 {
+                    text-align: left;
+                }
                 p {
                     color: $color3;
                     font-family: $font3;
-                    font-size: .8rem;
-                    letter-spacing: 1px;
-                    line-height: 2rem;
+                    font-weight: 300;
+                    font-size: .9rem;
+                    // letter-spacing: 1px;
+                    // line-height: 2rem;
+                    line-height: 30px;
+                    text-align: left;
+                    margin-top: 10px;
                     
                 }
                
@@ -44,13 +54,17 @@ footer {
                 color: $color1;
                 font-weight: 400;
                 font-family: $font2;
+                text-align: left;
             }
             input {
-                background: transparent;
+                background: none;
                 border: 1px solid $color4;
-                opacity: .3;
+                opacity: .5;
                 text-align: left;
-                padding: 8px;
+                padding: 10px;
+                height: 35px;
+                width: 250px;
+                margin-top: -20px;
                 font-family: $font3;
                 font-size: .9rem;
                 font-weight: 800;
@@ -59,12 +73,18 @@ footer {
 
             .socialmedias {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
 
                 i {
-                    font-size: .7rem;
+                    font-size: .8rem;
                     margin-left: 30px;
+                    transition: 0.2s;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
                 }
             }
         }
