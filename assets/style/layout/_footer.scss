@@ -50,6 +50,11 @@ footer {
             grid-template-rows: 1fr 1fr 1fr;
             row-gap: 30px;
 
+            @media screen and(max-width: 640px) {
+                margin-right: 0px;
+                
+            }
+
             .newsletter, h4 {
                 color: $color1;
                 font-weight: 400;
@@ -68,6 +73,11 @@ footer {
                 font-family: $font3;
                 font-size: .9rem;
                 font-weight: 800;
+
+                @media screen and(max-width: 340px) {
+                   width: 150px;
+                    
+                }
                 
             }
 
@@ -85,6 +95,11 @@ footer {
                     &:hover {
                         transform: scale(1.5);
                     }
+
+                    @media screen and(max-width: 340px) {
+                        margin-left: 10px;
+                         
+                     }
                 }
             }
         }

@@ -532,18 +532,19 @@ header .header-center p {
 .bottom-part .bottom-card {
   background: rgb(237, 231, 231);
   max-width: 950px;
+  width: 70%;
   height: 300px;
   margin: 0 auto;
   top: 60%;
   transform: translateY(-60%);
   box-shadow: 0 0 3px #333;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 540px) {
   .bottom-part .bottom-card {
-    min-height: 500px;
     width: 90%;
-    top: 80%;
+    top: 90%;
     transform: translateY(-80%);
+    margin: 0 auto;
   }
 }
 .bottom-part .bottom-card img {
@@ -558,15 +559,23 @@ header .header-center p {
   text-align: center;
   padding: 50px 20px;
 }
-@media screen and (max-width: 940px) {
-  .bottom-part .bottom-card .bottom-text {
-    padding: 50px 0;
-    height: 100%;
-  }
-}
 .bottom-part .bottom-card .bottom-text p {
   padding: 0 50px;
   line-height: 2rem;
+}
+@media screen and (max-width: 940px) {
+  .bottom-part .bottom-card .bottom-text p {
+    padding: 0px;
+    width: 90%;
+    line-height: 1rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .bottom-part .bottom-card .bottom-text p {
+    padding: 0px;
+    width: 90%;
+    line-height: 0.8rem;
+  }
 }
 .bottom-part .bottom-card .bottom-text p i {
   margin: 5px;
@@ -578,6 +587,12 @@ header .header-center p {
   font-size: 1.3rem;
   margin-top: 25px;
 }
+@media screen and (max-width: 840px) {
+  .bottom-part .bottom-card .bottom-text h2 {
+    margin-top: 0px;
+    margin: 0 auto;
+  }
+}
 .bottom-part .bottom-card .bottom-text h4 {
   color: rgb(201, 150, 89);
   font-family: "Roboto", serif;
@@ -585,6 +600,13 @@ header .header-center p {
   font-weight: 400;
   line-height: 2rem;
   margin: 5px auto;
+}
+@media screen and (max-width: 540px) {
+  .bottom-part .bottom-card .bottom-text h4 {
+    font-size: 0.6rem;
+    margin: 0 auto;
+    line-height: 1rem;
+  }
 }
 
 footer {
@@ -634,6 +656,11 @@ footer .f-container .f-social-grid {
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 30px;
 }
+@media screen and (max-width: 640px) {
+  footer .f-container .f-social-grid {
+    margin-right: 0px;
+  }
+}
 footer .f-container .f-social-grid .newsletter, footer .f-container .f-social-grid h4 {
   color: rgb(255, 255, 255);
   font-weight: 400;
@@ -653,6 +680,11 @@ footer .f-container .f-social-grid input {
   font-size: 0.9rem;
   font-weight: 800;
 }
+@media screen and (max-width: 340px) {
+  footer .f-container .f-social-grid input {
+    width: 150px;
+  }
+}
 footer .f-container .f-social-grid .socialmedias {
   display: flex;
   justify-content: space-around;
@@ -666,6 +698,11 @@ footer .f-container .f-social-grid .socialmedias i {
 }
 footer .f-container .f-social-grid .socialmedias i:hover {
   transform: scale(1.5);
+}
+@media screen and (max-width: 340px) {
+  footer .f-container .f-social-grid .socialmedias i {
+    margin-left: 10px;
+  }
 }
 
 * {
